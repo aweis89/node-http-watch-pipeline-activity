@@ -6,6 +6,7 @@ pipeline {
     ORG = 'aweis89'
     APP_NAME = 'node-http-watch-pipeline-activity'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
+    TILLER_NAMESPACE = 'kube-system'
   }
   stages {
     stage('CI Build and push snapshot') {
